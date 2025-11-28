@@ -1,39 +1,49 @@
-📘 Avaliação A1 – TDA
+📘 Avaliação A1 – Técnicas de Desenvolvimento de Algoritmos
 
-Repositório contendo todas as atividades da Avaliação A1 de Técnicas de Desenvolvimento de Algoritmos (TDA).
+Este repositório contém as quatro atividades avaliativas da disciplina TDA – Técnicas de Desenvolvimento de Algoritmos, trabalhando conceitos essenciais de lógica de programação: estruturas condicionais, laços de repetição, listas e dicionários.
+
 Cada atividade possui:
-✔ Código em Python
-✔ Código comentado
-✔ Pseudocódigo
-✔ Link do Google Colab
+✔ Código Python comentado
+✔ Pseudocódigo correspondente
+✔ Explicação do que o programa faz
 ✔ Exemplos de entrada e saída
-✔ Explicação do funcionamento
+✔ Link para execução no Google Colab
+
+🗂️ Estrutura do Repositório
+Avaliação_A1_TDA/
+├── README.md
+│
+├── Estruturas_Condicionais/
+│   └── verificacao_idade.py
+│
+├── Estruturas_de_Repeticao/
+│   └── pares_for_while.py
+│
+├── Listas/
+│   └── cadastro_alunos.py
+│
+└── Dicionarios/
+    └── cadastro_produtos.py
 
 🧩 Atividade 1 – Estruturas Condicionais
 
-📎 Colab: https://colab.research.google.com/drive/159wrnFaoe8ywcCt3N5wKIBn5BgjMy9XV?usp=sharing
+🔗 Google Colab:
+https://colab.research.google.com/drive/159wrnFaoe8ywcCt3N5wKIBn5BgjMy9XV?usp=sharing
 
-📌 Objetivo
+📌 O que o programa faz?
 
-Criar um programa que verifica a idade e decide se a entrada é permitida.
+Lê a idade do usuário e determina se a entrada é permitida, permitida com responsável ou proibida.
 
-🧠 Como funciona
+▶️ Exemplo de entrada:
+17
 
-O programa lê a idade informada pelo usuário e usa estruturas if / elif / else para decidir a permissão de entrada.
+🟢 Exemplo de saída:
+Entrada permitida somente com responsável.
 
-📥 Exemplo de entrada
-18
-
-📤 Exemplo de saída
-Entrada permitida! Você é maior de idade.
-
-💻 Código (Python)
-
-Disponível na pasta /atividade_1/.
-
-🧾 Pseudocódigo
+📎 Pseudocódigo
 INICIO
   LER idade
+  
   SE idade >= 18 ENTÃO
       ESCREVER "Entrada permitida! Você é maior de idade."
   SENÃO SE idade >= 16 ENTÃO
@@ -45,76 +55,125 @@ FIM
 
 🔁 Atividade 2 – Estruturas de Repetição
 
-📎 Colab: https://colab.research.google.com/drive/1JItn_Mk4IU1KomvEpulE7j1nShRhKxxf?usp=sharing
+🔗 Google Colab:
+https://colab.research.google.com/drive/1JItn_Mk4IU1KomvEpulE7j1nShRhKxxf?usp=sharing
 
-📌 Objetivo
+📌 O que o programa faz?
 
-Exibir todos os números pares de 1 a 100 usando for e while.
+Exibe todos os números pares entre 1 e 100, usando FOR e WHILE.
 
-🧠 Como funciona
-
-O programa percorre os números de 1 a 100 e imprime apenas os que são pares (números divisíveis por 2).
-
-📤 Exemplo de saída (trecho)
+▶️ Exemplo de saída (trecho):
 2
 4
 6
 ...
 100
 
-💻 Código (Python)
+📎 Pseudocódigo (FOR)
+INICIO
+  PARA num DE 1 ATÉ 100 FAÇA
+      SE num % 2 = 0 ENTÃO
+          ESCREVER num
+      FIMSE
+  FIMPARA
+FIM
 
-Disponível na pasta /atividade_2/.
+📎 Pseudocódigo (WHILE)
+INICIO
+  num ← 1
 
-📋 Atividade 3 – Listas
+  ENQUANTO num <= 100 FAÇA
+      SE num % 2 = 0 ENTÃO
+          ESCREVER num
+      FIMSE
+      
+      num ← num + 1
+  FIMENQUANTO
+FIM
 
-📎 Colab: https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing
+📝 Atividade 3 – Listas
 
-📌 Objetivo
+🔗 Google Colab:
+https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing
 
-Criar um programa que manipula listas: adiciona, remove e exibe elementos.
+📌 O que o programa faz?
 
-🧠 Como funciona
+Cadastra nomes de alunos em uma lista e depois exibe todos os cadastrados.
 
-O programa apresenta um menu interativo para o usuário escolher ações sobre uma lista armazenada em memória.
+▶️ Exemplo de entrada:
+João
+Maria
+sair
 
-📥 Exemplo de entrada
-1
-Maçã
-1
-Banana
-2
+🟢 Exemplo de saída:
+Alunos cadastrados:
+João
+Maria
 
-📤 Exemplo de saída
-Lista atual: ['Maçã', 'Banana']
+📎 Pseudocódigo
+INICIO
+  CRIAR lista_alunos COMO LISTA VAZIA
+  
+  REPETIR
+      LER nome
+      
+      SE nome = "sair" ENTÃO
+          PARAR
+      FIMSE
+      
+      ADICIONAR nome NA lista_alunos
+  ATÉ QUE nome = "sair"
 
-💻 Código (Python)
+  PARA CADA aluno EM lista_alunos FAÇA
+      ESCREVER aluno
+  FIMPARA
+FIM
 
-Disponível na pasta /atividade_3/.
+🛒 Atividade 4 – Dicionários
 
-📚 Atividade 4 – Dicionários
+🔗 Google Colab:
+https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing
 
-📎 Colab: https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing
+📌 O que o programa faz?
 
-📌 Objetivo
+Cadastra produtos utilizando dicionários. Cada produto possui nome, preço e quantidade.
 
-Criar um programa que armazena informações usando dicionários.
+▶️ Exemplo de entrada:
+Arroz
+12.50
+3
+sair
 
-🧠 Como funciona
+🟢 Exemplo de saída:
+Arroz - R$ 12.50 - Quantidade: 3
 
-O usuário informa uma chave e um valor, e o programa armazena tudo dentro de um dicionário, permitindo exibir todos os dados no final.
+📎 Pseudocódigo
+INICIO
+  CRIAR produtos COMO DICIONARIO
+  
+  REPETIR
+      LER nome
+      
+      SE nome = "sair" ENTÃO
+          PARAR
+      FIMSE
+      
+      LER preco
+      LER quantidade
+      
+      produtos[nome] ← { "preco": preco, "quantidade": quantidade }
+  ATÉ QUE nome = "sair"
 
-📥 Exemplo de entrada
-nome
-Gustavo
-idade
-21
+  PARA CADA item EM produtos FAÇA
+      ESCREVER nome, preco, quantidade
+  FIMPARA
+FIM
 
-📤 Exemplo de saída
-{'nome': 'Gustavo', 'idade': '21'}
+📄 Licença – MIT License
+MIT License
 
-💻 Código (Python)
+Copyright (c) 2025
 
-Disponível na pasta /atividade_4/.
-
-📝 Licença – MIT
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction...
