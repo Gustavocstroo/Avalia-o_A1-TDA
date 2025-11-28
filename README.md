@@ -1,65 +1,37 @@
-# Avaliação A1 – Tecnologia e Desenvolvimento de Algoritmos (TDA)
+📘 Avaliação A1 – TDA
 
-Este repositório reúne todas as atividades desenvolvidas para a Avaliação A1 da disciplina **Tecnologia e Desenvolvimento de Algoritmos**.
-Aqui estão organizados os códigos, explicações, exemplos, pseudocódigos e links dos notebooks no Google Colab.
+Repositório contendo todas as atividades da Avaliação A1 de Técnicas de Desenvolvimento de Algoritmos (TDA).
+Cada atividade possui:
+✔ Código em Python
+✔ Código comentado
+✔ Pseudocódigo
+✔ Link do Google Colab
+✔ Exemplos de entrada e saída
+✔ Explicação do funcionamento
 
----
+🧩 Atividade 1 – Estruturas Condicionais
 
-## 🗂️ Estrutura do Repositório
+📎 Colab: https://colab.research.google.com/drive/159wrnFaoe8ywcCt3N5wKIBn5BgjMy9XV?usp=sharing
 
-```
-Avaliação_A1_TDA/
-├── README.md
-├── LICENSE
-│
-├── 1_Estruturas_Condicionais/
-│   └── verificacao_idade.py
-│
-├── 2_Estruturas_de_Repeticao/
-│   └── pares_for_while.py
-│
-├── 3_Listas/
-│   └── cadastro_alunos.py
-│
-└── 4_Dicionarios/
-    └── cadastro_produtos.py
-```
+📌 Objetivo
 
----
+Criar um programa que verifica a idade e decide se a entrada é permitida.
 
-## 📎 Google Colab – Atividades
+🧠 Como funciona
 
-Atividade 1 – Estruturas Condicionais
-🔗 https://colab.research.google.com/drive/159wrnFaoe8ywcCt3N5wKIBn5BgjMy9XV?usp=sharing
+O programa lê a idade informada pelo usuário e usa estruturas if / elif / else para decidir a permissão de entrada.
 
-Atividade 2 – Estruturas de Repetição
-🔗 https://colab.research.google.com/drive/1JItn_Mk4IU1KomvEpulE7j1nShRhKxxf?usp=sharing
+📥 Exemplo de entrada
+18
 
-Atividade 3 – Listas
-🔗 https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing
+📤 Exemplo de saída
+Entrada permitida! Você é maior de idade.
 
-Atividade 4 – Dicionários
-🔗 https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing
+💻 Código (Python)
 
-# 📝 Explicação, Pseudocódigo e Exemplos de Cada Atividade
+Disponível na pasta /atividade_1/.
 
----
-
-# ✅ **1) Estruturas Condicionais – Verificação de Idade**
-
-**Arquivo:** `1_Estruturas_Condicionais/verificacao_idade.py`
-
-### 📌 O QUE O PROGRAMA FAZ?
-
-Lê a idade do usuário e informa se sua entrada é:
-
-* Permitida
-* Permitida com responsável
-* Proibida
-
-### 🔎 **Pseudocódigo**
-
-```
+🧾 Pseudocódigo
 INICIO
   LER idade
   SE idade >= 18 ENTÃO
@@ -70,211 +42,79 @@ INICIO
       ESCREVER "Entrada proibida. Você é menor de 16 anos."
   FIMSE
 FIM
-```
 
-### 🧪 **Exemplo de Entrada e Saída**
+🔁 Atividade 2 – Estruturas de Repetição
 
-**Entrada:**
+📎 Colab: https://colab.research.google.com/drive/1JItn_Mk4IU1KomvEpulE7j1nShRhKxxf?usp=sharing
 
-```
-idade = 20
-```
+📌 Objetivo
 
-**Saída:**
+Exibir todos os números pares de 1 a 100 usando for e while.
 
-```
-Entrada permitida! Você é maior de idade.
-```
+🧠 Como funciona
 
----
+O programa percorre os números de 1 a 100 e imprime apenas os que são pares (números divisíveis por 2).
 
-**Entrada:**
-
-```
-idade = 16
-```
-
-**Saída:**
-
-```
-Entrada permitida somente com responsável.
-```
-
----
-
-**Entrada:**
-
-```
-idade = 14
-```
-
-**Saída:**
-
-```
-Entrada proibida. Você é menor de 16 anos.
-```
-
----
-
-# ✅ **2) Estruturas de Repetição – Exibir Números Pares**
-
-**Arquivo:** `2_Estruturas_de_Repeticao/pares_for_while.py`
-
-### 📌 O QUE O PROGRAMA FAZ?
-
-Mostra todos os números pares de **1 a 100**, usando:
-
-* Um laço **for**
-* Um laço **while**
-
-### 🔎 **Pseudocódigo Correto**
-
-```
-INICIO
-  ESCREVER "Números pares usando FOR"
-  PARA num DE 1 ATÉ 100 PASSO 1 FAÇA
-      SE num % 2 == 0 ENTÃO
-          ESCREVER num
-      FIMSE
-  FIMPARA
-
-  ESCREVER "Números pares usando WHILE"
-  num ← 1
-  ENQUANTO num <= 100 FAÇA
-      SE num % 2 == 0 ENTÃO
-          ESCREVER num
-      FIMSE
-      num ← num + 1
-  FIMENQUANTO
-FIM
-```
-
-### 🧪 **Exemplo de Saída (abreviado)**
-
-```
-Números pares usando FOR:
+📤 Exemplo de saída (trecho)
 2
 4
 6
 ...
 100
 
-Números pares usando WHILE:
+💻 Código (Python)
+
+Disponível na pasta /atividade_2/.
+
+📋 Atividade 3 – Listas
+
+📎 Colab: https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing
+
+📌 Objetivo
+
+Criar um programa que manipula listas: adiciona, remove e exibe elementos.
+
+🧠 Como funciona
+
+O programa apresenta um menu interativo para o usuário escolher ações sobre uma lista armazenada em memória.
+
+📥 Exemplo de entrada
+1
+Maçã
+1
+Banana
 2
-4
-6
-...
-100
-```
 
-O comportamento é idêntico nos dois laços.
+📤 Exemplo de saída
+Lista atual: ['Maçã', 'Banana']
 
----
+💻 Código (Python)
 
-# ✅ **3) Listas – Cadastro de Alunos**
+Disponível na pasta /atividade_3/.
 
-**Arquivo:** `3_Listas/cadastro_alunos.py`
+📚 Atividade 4 – Dicionários
 
-### 📌 O QUE O PROGRAMA FAZ?
+📎 Colab: https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing
 
-* Cria uma lista vazia
-* Lê 3 nomes digitados pelo usuário
-* Armazena todos na lista
-* Exibe o resultado final
+📌 Objetivo
 
-### 🔎 **Pseudocódigo**
+Criar um programa que armazena informações usando dicionários.
 
-```
-INICIO
-  CRIAR lista_alunos VAZIA
-  
-  PARA i DE 1 ATÉ 3 FAÇA
-      LER nome
-      ADICIONAR nome NA lista_alunos
-  FIMPARA
-  
-  ESCREVER lista_alunos
-FIM
-```
+🧠 Como funciona
 
-### 🧪 **Exemplo de Entrada**
+O usuário informa uma chave e um valor, e o programa armazena tudo dentro de um dicionário, permitindo exibir todos os dados no final.
 
-```
-João
-Maria
-Carlos
-```
+📥 Exemplo de entrada
+nome
+Gustavo
+idade
+21
 
-### 🧪 **Saída**
+📤 Exemplo de saída
+{'nome': 'Gustavo', 'idade': '21'}
 
-```
-['João', 'Maria', 'Carlos']
-```
+💻 Código (Python)
 
----
+Disponível na pasta /atividade_4/.
 
-# ✅ **4) Dicionários – Cadastro de Produtos**
-
-**Arquivo:** `4_Dicionarios/cadastro_produtos.py`
-
-### 📌 O QUE O PROGRAMA FAZ?
-
-* Cria um dicionário
-* Lê nome, preço e quantidade do produto
-* Armazena os valores no dicionário
-* Exibe o produto completo
-
-### 🔎 **Pseudocódigo**
-
-```
-INICIO
-  CRIAR produtos COMO DICIONARIO VAZIO
-
-  ESCREVER "Cadastro de produtos (digite 'sair' para encerrar')"
-
-  ENQUANTO VERDADEIRO FAÇA
-      LER nome
-
-      SE nome = "sair" ENTÃO
-          PARAR O LOOP
-      FIMSE
-
-      LER preco
-      LER quantidade
-
-      produtos[nome] ← DICIONARIO {
-          "preco": preco,
-          "quantidade": quantidade
-      }
-  FIMENQUANTO
-
-  ESCREVER "Produtos cadastrados:"
-
-  PARA CADA nome, dados EM produtos FAÇA
-      ESCREVER nome, dados["preco"], dados["quantidade"]
-  FIMPARA
-FIM
-
-```
-
-### 🧪 **Exemplo de Entrada**
-
-```
-Nome: Mouse Gamer
-Preço: 129.90
-Quantidade: 4
-```
-
-### 🧪 **Saída**
-
-```
-{'nome': 'Mouse Gamer', 'preco': 129.9, 'quantidade': 4}
-```
-
----
-
-# 📄 Licença
-
-Este projeto está sob a licença **MIT**.
-
----
+📝 Licença – MIT
