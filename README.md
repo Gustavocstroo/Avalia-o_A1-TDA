@@ -1,7 +1,8 @@
-# Avaliação A1 – Tecnologia e Desenvolvimento de Algoritmos (TDA)
+# 📘 Avaliação A1 — Técnicas de Desenvolvimento de Algoritmos
 
-Este repositório reúne todas as atividades desenvolvidas para a Avaliação A1 da disciplina **Tecnologia e Desenvolvimento de Algoritmos**.  
-Aqui estão organizados os códigos, pseudocódigos e notebooks utilizados para resolver cada atividade.
+Este repositório contém quatro programas desenvolvidos em Python, cada um representando diferentes estruturas fundamentais da lógica de programação: **estruturas condicionais**, **estruturas de repetição (for e while)**, **listas** e **dicionários**.
+
+Além do código-fonte, este README inclui **pseudocódigo** para facilitar a compreensão dos algoritmos utilizados.
 
 ---
 
@@ -27,110 +28,147 @@ Avaliação_A1_TDA/
 
 ---
 
-## 📎 Google Colab – Atividades
-
-Cada atividade também foi desenvolvida no Google Colab para facilitar testes e organização:
-
-**Atividade 1 – Operações e Estruturas Básicas**  
-🔗 https://colab.research.google.com/drive/159wrnFaoe8ywcCt3N5wKIBn5BgjMy9XV?usp=sharing  
-
-**Atividade 2 – Estruturas Condicionais**  
-🔗 https://colab.research.google.com/drive/1JItn_Mk4IU1KomvEpulE7j1nShRhKxxf?usp=sharing  
-
-**Atividade 3 – Estruturas de Repetição**  
-🔗 https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing  
-
-**Atividade 4 – Funções**  
-🔗 https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing  
+# 📂 Detalhamento dos Programas
 
 ---
 
-## 📝 Pseudocódigos das Atividades
+## ✅ **1. Estruturas Condicionais – verificacao_idade.py**
 
-### **1) Estruturas Condicionais – verificação de idade**
+### 📌 **O que o programa faz**
 
-**Arquivo:** `Estruturas_Condicionais/verificacao_idade.py`
+O programa solicita a idade do usuário e utiliza **estrutura condicional (if/elif/else)** para determinar se a pessoa é:
 
-**Pseudocódigo:**
+* Menor de idade
+* Maior de idade
+* Idoso (≥ 60 anos)
+
+### 🧠 **Pseudocódigo**
+
 ```
-INICIO
-  LER idade
-  SE idade >= 18 ENTÃO
-      ESCREVE "Entrada permitida! Você é maior de idade."
-  SENÃO SE idade >= 16 ENTÃO
-      ESCREVE "Entrada permitida somente com responsável."
-  SENÃO
-      ESCREVE "Entrada proibida. Você é menor de 16 anos."
-  FIMSE
+INÍCIO
+    LER idade
+    SE idade < 18 ENTÃO
+        ESCREVER "Menor de idade"
+    SENÃO SE idade >= 60 ENTÃO
+        ESCREVER "Idoso"
+    SENÃO
+        ESCREVER "Maior de idade"
 FIM
 ```
 
 ---
 
-### **2) Estruturas de Repetição – números pares**
+## ✅ **2. Estruturas de Repetição – pares_for_while.py**
 
-**Arquivo:** `Estruturas_de_Repeticao/pares_for_while.py`
+### 📌 **O que o programa faz**
 
-**Pseudocódigo:**
+Este programa exibe **todos os números pares de 1 a 100**, usando:
+
+* Um **laço FOR**
+* Um **laço WHILE**
+
+O objetivo é demonstrar a aplicação prática das duas estruturas de repetição.
+
+---
+
+### 🧠 **Pseudocódigo (FOR)**
+
 ```
-INICIO
-  PARA numero DE 0 ATÉ 20 PASSO 2 FAÇA
-      ESCREVE numero
-  FIMPARA
-  
-  numero ← 0
-  ENQUANTO numero <= 20 FAÇA
-      ESCREVE numero
-      numero ← numero + 2
-  FIMENQUANTO
+INÍCIO
+    PARA num DE 1 ATÉ 100 FAÇA
+        SE num MOD 2 == 0 ENTÃO
+            ESCREVER num
+        FIMSE
+    FIMPARA
+FIM
+```
+
+### 🧠 **Pseudocódigo (WHILE)**
+
+```
+INÍCIO
+    num ← 1
+    ENQUANTO num <= 100 FAÇA
+        SE num MOD 2 == 0 ENTÃO
+            ESCREVER num
+        FIMSE
+        num ← num + 1
+    FIMENQUANTO
 FIM
 ```
 
 ---
 
-### **3) Listas – cadastro de alunos**
+## ✅ **3. Listas – cadastro_alunos.py**
 
-**Arquivo:** `Listas/cadastro_alunos.py`
+### 📌 **O que o programa faz**
 
-**Pseudocódigo:**
+Este programa permite cadastrar nomes de alunos dentro de uma **lista**.
+Ele solicita repetidamente um nome até que o usuário digite `"sair"`.
+
+Ao final, exibe:
+
+* Quantos alunos foram cadastrados
+* A lista completa dos alunos
+
+### 🧠 **Pseudocódigo**
+
 ```
-INICIO
-  CRIAR lista_alunos VAZIA
-  
-  PARA i DE 1 ATÉ 3 FAÇA
-      LER nome
-      ADICIONAR nome NA lista_alunos
-  FIMPARA
-  
-  ESCREVE lista_alunos
+INÍCIO
+    CRIAR lista_alunos VAZIA
+    REPETIR
+        LER nome
+        SE nome != "sair" ENTÃO
+            ADICIONAR nome À lista_alunos
+        FIMSE
+    ATÉ nome == "sair"
+    ESCREVER quantidade de alunos
+    ESCREVER lista de alunos
 FIM
 ```
 
 ---
 
-### **4) Dicionários – cadastro de produtos**
+## ✅ **4. Dicionários – cadastro_produtos.py**
 
-**Arquivo:** `Dicionarios/cadastro_produtos.py`
+### 📌 **O que o programa faz**
 
-**Pseudocódigo:**
+O programa permite cadastrar produtos com:
+
+* Nome
+* Preço
+
+Cada produto é salvo em um **dicionário**, e vários dicionários são armazenados em uma lista.
+
+Ao final, o programa exibe todos os produtos cadastrados.
+
+### 🧠 **Pseudocódigo**
+
 ```
-INICIO
-  CRIAR produto COMO DICIONARIO
-  
-  LER nome
-  LER preço
-  LER quantidade
-  
-  produto["nome"] ← nome
-  produto["preco"] ← preço
-  produto["quantidade"] ← quantidade
-  
-  ESCREVE produto
+INÍCIO
+    CRIAR lista_produtos VAZIA
+    REPETIR
+        LER nome_produto
+        SE nome_produto != "sair" ENTÃO
+            LER preco
+            CRIAR dicionario_produto
+            dicionario_produto["nome"] ← nome_produto
+            dicionario_produto["preco"] ← preco
+            ADICIONAR dicionario_produto À lista_produtos
+        FIMSE
+    ATÉ nome_produto == "sair"
+    
+    PARA cada produto EM lista_produtos FAÇA
+        ESCREVER nome e preço do produto
+    FIMPARA
 FIM
 ```
----
-
-## 📄 Licença
-Este projeto está sob a licença **MIT**.
 
 ---
+
+# 📄 Licença
+
+Este projeto utiliza a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
+
+---
+
