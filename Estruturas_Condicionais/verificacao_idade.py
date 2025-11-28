@@ -1,0 +1,15 @@
+# Programa para verificar a idade do usuário e determinar
+# se ele pode entrar em um evento.
+
+# Entrada de dados:idade digitada pelo usuário
+idade = int(input("Digite sua idade: "))
+
+# Verificação da idade usando if, elif e else
+if idade >= 18:
+    print("Entrada permitida! Você é maior de idade.")
+elif idade >= 16:
+# Aqui só entra se for 16 ou 17
+    print("Entrada permitida somente com responsável.")
+else:
+# Aqui entra qualquer idade menor que 16
+    print("Entrada proibida. Você é menor de 16 anos.")
