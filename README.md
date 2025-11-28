@@ -29,16 +29,16 @@ Avaliação_A1_TDA/
 
 ## 📎 Google Colab – Atividades
 
-**Atividade 1 – Operações e Estruturas Básicas**
+**Atividade 1 – Estruturas Condicionais**
 🔗 [https://colab.research.google.com/drive/159wrnFaoe8ywcCt3N5wKIBn5BgjMy9XV?usp=sharing](https://colab.research.google.com/drive/159wrnFaoe8ywcCt3N5wKIBn5BgjMy9XV?usp=sharing)
 
-**Atividade 2 – Estruturas Condicionais**
+**Atividade 2 – Estruturas de Repetição**
 🔗 [https://colab.research.google.com/drive/1JItn_Mk4IU1KomvEpulE7j1nShRhKxxf?usp=sharing](https://colab.research.google.com/drive/1JItn_Mk4IU1KomvEpulE7j1nShRhKxxf?usp=sharing)
 
-**Atividade 3 – Estruturas de Repetição**
+**Atividade 3 – Listas**
 🔗 [https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing](https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing)
 
-**Atividade 4 – Funções**
+**Atividade 4 – Dicionários**
 🔗 [https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing](https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing)
 
 ---
