@@ -40,7 +40,6 @@ Atividade 3 – Listas
 
 Atividade 4 – Dicionários
 🔗 https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing
----
 
 # 📝 Explicação, Pseudocódigo e Exemplos de Cada Atividade
 
