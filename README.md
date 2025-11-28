@@ -1,65 +1,62 @@
 # 🧮 Avaliação A1 – Técnicas de Desenvolvimento de Algoritmos (TDA)
 
-[![Python](https://img.shields.io/badge/python-3.x-blue)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+Python License: MIT
 
-## 📖 Visão Geral
-
-Repositório com os exercícios da **Avaliação A1** da disciplina Técnicas de Desenvolvimento de Algoritmos (TDA).
-Os exercícios cobrem os principais tópicos da unidade: estruturas condicionais, estruturas de repetição, listas e dicionários.
-Cada exercício está organizado em sua própria pasta, com código Python comentado, pseudocódigo e fluxograma (quando aplicável).
+Repositório com os exercícios da Avaliação A1 da disciplina Técnicas de Desenvolvimento de Algoritmos (TDA). Cada exercício possui código Python organizado por tema e um link direto para execução no Google Colab.
 
 ---
 
-## 🧾 Sumário
-
-* [Conteúdos e Estrutura](#conteúdos-e-estrutura)
-* [Como Executar](#como-executar)
-* [Exemplos de Uso](#exemplos-de-uso)
-* [Critérios de Avaliação Atendidos](#critérios-de-avaliação-atendidos)
-* [Licença](#licença)
-
----
-
-## 🗂️ Conteúdos e Estrutura
+## 🗂️ Estrutura do Repositório
 
 ```
 Avaliação_A1_TDA/
 ├── README.md
 ├── LICENSE
-├── assets/
-│   └── fluxograma_condicionais.png
 │
 ├── Estruturas_Condicionais/
-│   ├── verificacao_idade.py
-│   ├── pseudocodigo.txt
-│   └── fluxograma.png
+│   └── verificacao_idade.py
 │
 ├── Estruturas_de_Repeticao/
-│   ├── pares_for_while.py
-│   ├── pseudocodigo.txt
-│   └── fluxograma.png
+│   └── pares_for_while.py
 │
 ├── Listas/
-│   ├── cadastro_alunos.py
-│   ├── pseudocodigo.txt
-│   └── fluxograma.png
+│   └── cadastro_alunos.py
 │
 └── Dicionarios/
-    ├── cadastro_produtos.py
-    ├── pseudocodigo.txt
-    └── fluxograma.png
+    └── cadastro_produtos.py
 ```
-
-> **Dica:** mantenha nomes de pastas sem acentos (`Estruturas_de_Repeticao`, `Dicionarios`) para evitar incompatibilidades entre sistemas operacionais.
 
 ---
 
-## ▶️ Como Executar
+## ▶️ Acessar os Exercícios no Google Colab
 
-Abra o terminal (ou PowerShell) na raiz do repositório e rode:
+### Estruturas Condicionais – Verificação de Idade  
+Código: `Estruturas_Condicionais/verificacao_idade.py`  
+Colab: https://colab.research.google.com/drive/159wrnFaoe8ywcCt3N5wKIBn5BgjMy9XV?usp=sharing  
 
-```bash
+---
+
+### Estruturas de Repetição – Números Pares (for/while)  
+Código: `Estruturas_de_Repeticao/pares_for_while.py`  
+Colab: https://colab.research.google.com/drive/1JItn_Mk4IU1KomvEpulE7j1nShRhKxxf?usp=sharing  
+
+---
+
+### Listas – Cadastro de Alunos  
+Código: `Listas/cadastro_alunos.py`  
+Colab: https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing  
+
+---
+
+### Dicionários – Cadastro de Produtos  
+Código: `Dicionarios/cadastro_produtos.py`  
+Colab: https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing  
+
+---
+
+## ▶️ Como Executar Localmente
+
+```
 python Estruturas_Condicionais/verificacao_idade.py
 python Estruturas_de_Repeticao/pares_for_while.py
 python Listas/cadastro_alunos.py
@@ -70,25 +67,27 @@ python Dicionarios/cadastro_produtos.py
 
 ## 🧪 Exemplos de Uso
 
-**Verificação de Idade**
-
+### Verificação de Idade  
+Entrada:  
 ```
-Entrada:
 Digite sua idade: 17
-
-Saída:
+```
+Saída:  
+```
 Você é menor de idade.
 ```
 
-**Cadastro de Produtos**
+---
 
+### Cadastro de Produtos  
+Entrada:  
 ```
-Entrada:
 Nome do produto: Coca-Cola
 Preço (R$): 7.5
 Quantidade: 2
-
-Saída:
+```
+Saída:  
+```
 nome: Coca-Cola
 preco: 7.5
 quantidade: 2
@@ -98,14 +97,15 @@ quantidade: 2
 
 ## ✅ Critérios de Avaliação Atendidos
 
-* Código limpo, organizado por tema
-* Comentários explicativos em cada script
-* Entrada e saída de dados funcionando corretamente
-* README completo, com execução e exemplos
-* Pseudocódigo e fluxograma incluídos (quando presentes)
+- Código organizado por tema  
+- Execução local simples  
+- Links diretos para o Google Colab  
+- Exemplos de entrada e saída  
+- README completo  
+- Scripts funcionais  
+- Comentários explicativos nos códigos  
 
 ---
 
 ## 📄 Licença
-
-Este projeto está licenciado sob a **MIT License** — veja o arquivo `LICENSE`.
+Este projeto está licenciado sob a MIT License.
