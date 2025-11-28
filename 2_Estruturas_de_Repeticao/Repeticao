@@ -1,2 +1,23 @@
-Estruturas de repetição 
-https://colab.research.google.com/drive/1JItn_Mk4IU1KomvEpulE7j1nShRhKxxf?usp=sharing
+# Programa que exibe números pares de 1 a 100
+# usando duas estruturas de repetição: for e while.
+
+print("Números pares de 1 a 100 usando FOR:")
+
+# Laço FOR percorre de 1 a 100
+for num in range(1, 101):
+    # Verifica se o número é par
+    if num % 2 == 0:
+        print(num)
+
+print("\nNúmeros pares de 1 a 100 usando WHILE:")
+
+# Inicializa a variável para o while
+num = 1
+
+# Enquanto num for menor ou igual a 100
+while num <= 100:
+    # Verifica se é par
+    if num % 2 == 0:
+        print(num)
+    # Incrementa o contador
+    num += 1
