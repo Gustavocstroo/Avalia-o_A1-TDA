@@ -39,8 +39,7 @@ Avaliação_A1_TDA/
 🔗 [https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing](https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing)
 
 **Atividade 4 – Dicionários**
-🔗 [https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing](https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing)
-
+🔗 https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing
 ---
 
 # 📝 Explicação, Pseudocódigo e Exemplos de Cada Atividade
