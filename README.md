@@ -1,6 +1,6 @@
-📘 Avaliação A1 – Técnicas de Desenvolvimento de Algoritmos
+# 📘 Avaliação A1 – Técnicas de Desenvolvimento de Algoritmos
 
-Este repositório contém as quatro atividades avaliativas da disciplina TDA – Técnicas de Desenvolvimento de Algoritmos, trabalhando conceitos essenciais de lógica de programação: estruturas condicionais, laços de repetição, listas e dicionários.
+Este repositório contém as quatro atividades avaliativas da disciplina **TDA – Técnicas de Desenvolvimento de Algoritmos**, trabalhando conceitos essenciais de lógica de programação: **estruturas condicionais**, **laços de repetição**, **listas** e **dicionários**.
 
 Cada atividade possui:
 ✔ Código Python comentado
@@ -9,7 +9,11 @@ Cada atividade possui:
 ✔ Exemplos de entrada e saída
 ✔ Link para execução no Google Colab
 
-🗂️ Estrutura do Repositório
+---
+
+## 🗂️ Estrutura do Repositório
+
+```
 Avaliação_A1_TDA/
 ├── README.md
 │
@@ -24,23 +28,34 @@ Avaliação_A1_TDA/
 │
 └── Dicionarios/
     └── cadastro_produtos.py
+```
 
-🧩 Atividade 1 – Estruturas Condicionais
+---
 
-🔗 Google Colab:
-https://colab.research.google.com/drive/159wrnFaoe8ywcCt3N5wKIBn5BgjMy9XV?usp=sharing
+# 🧩 **Atividade 1 – Estruturas Condicionais**
 
-📌 O que o programa faz?
+🔗 **Google Colab:**
+[https://colab.research.google.com/drive/159wrnFaoe8ywcCt3N5wKIBn5BgjMy9XV?usp=sharing](https://colab.research.google.com/drive/159wrnFaoe8ywcCt3N5wKIBn5BgjMy9XV?usp=sharing)
+
+### 📌 O que o programa faz?
 
 Lê a idade do usuário e determina se a entrada é permitida, permitida com responsável ou proibida.
 
-▶️ Exemplo de entrada:
+### ▶️ Exemplo de entrada:
+
+```
 17
+```
 
-🟢 Exemplo de saída:
+### 🟢 Exemplo de saída:
+
+```
 Entrada permitida somente com responsável.
+```
 
-📎 Pseudocódigo
+### 📎 Pseudocódigo
+
+```
 INICIO
   LER idade
   
@@ -52,24 +67,32 @@ INICIO
       ESCREVER "Entrada proibida. Você é menor de 16 anos."
   FIMSE
 FIM
+```
 
-🔁 Atividade 2 – Estruturas de Repetição
+---
 
-🔗 Google Colab:
-https://colab.research.google.com/drive/1JItn_Mk4IU1KomvEpulE7j1nShRhKxxf?usp=sharing
+# 🔁 **Atividade 2 – Estruturas de Repetição**
 
-📌 O que o programa faz?
+🔗 **Google Colab:**
+[https://colab.research.google.com/drive/1JItn_Mk4IU1KomvEpulE7j1nShRhKxxf?usp=sharing](https://colab.research.google.com/drive/1JItn_Mk4IU1KomvEpulE7j1nShRhKxxf?usp=sharing)
 
-Exibe todos os números pares entre 1 e 100, usando FOR e WHILE.
+### 📌 O que o programa faz?
 
-▶️ Exemplo de saída (trecho):
+Exibe todos os números pares entre **1 e 100**, usando FOR e WHILE.
+
+### ▶️ Exemplo de saída (trecho):
+
+```
 2
 4
 6
 ...
 100
+```
 
-📎 Pseudocódigo (FOR)
+### 📎 Pseudocódigo (FOR)
+
+```
 INICIO
   PARA num DE 1 ATÉ 100 FAÇA
       SE num % 2 = 0 ENTÃO
@@ -77,8 +100,11 @@ INICIO
       FIMSE
   FIMPARA
 FIM
+```
 
-📎 Pseudocódigo (WHILE)
+### 📎 Pseudocódigo (WHILE)
+
+```
 INICIO
   num ← 1
 
@@ -90,27 +116,38 @@ INICIO
       num ← num + 1
   FIMENQUANTO
 FIM
+```
 
-📝 Atividade 3 – Listas
+---
 
-🔗 Google Colab:
-https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing
+# 📝 **Atividade 3 – Listas**
 
-📌 O que o programa faz?
+🔗 **Google Colab:**
+[https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing](https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing)
+
+### 📌 O que o programa faz?
 
 Cadastra nomes de alunos em uma lista e depois exibe todos os cadastrados.
 
-▶️ Exemplo de entrada:
+### ▶️ Exemplo de entrada:
+
+```
 João
 Maria
 sair
+```
 
-🟢 Exemplo de saída:
+### 🟢 Exemplo de saída:
+
+```
 Alunos cadastrados:
 João
 Maria
+```
 
-📎 Pseudocódigo
+### 📎 Pseudocódigo
+
+```
 INICIO
   CRIAR lista_alunos COMO LISTA VAZIA
   
@@ -128,26 +165,37 @@ INICIO
       ESCREVER aluno
   FIMPARA
 FIM
+```
 
-🛒 Atividade 4 – Dicionários
+---
 
-🔗 Google Colab:
-https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing
+# 🛒 **Atividade 4 – Dicionários**
 
-📌 O que o programa faz?
+🔗 **Google Colab:**
+[https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing](https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing)
+
+### 📌 O que o programa faz?
 
 Cadastra produtos utilizando dicionários. Cada produto possui nome, preço e quantidade.
 
-▶️ Exemplo de entrada:
+### ▶️ Exemplo de entrada:
+
+```
 Arroz
 12.50
 3
 sair
+```
 
-🟢 Exemplo de saída:
+### 🟢 Exemplo de saída:
+
+```
 Arroz - R$ 12.50 - Quantidade: 3
+```
 
-📎 Pseudocódigo
+### 📎 Pseudocódigo
+
+```
 INICIO
   CRIAR produtos COMO DICIONARIO
   
@@ -168,8 +216,13 @@ INICIO
       ESCREVER nome, preco, quantidade
   FIMPARA
 FIM
+```
 
-📄 Licença – MIT License
+---
+
+# 📄 Licença – MIT License
+
+```
 MIT License
 
 Copyright (c) 2025
@@ -177,3 +230,6 @@ Copyright (c) 2025
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction...
+```
+
+---
