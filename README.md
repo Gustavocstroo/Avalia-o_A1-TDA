@@ -230,18 +230,33 @@ Carlos
 
 ```
 INICIO
-  CRIAR produto COMO DICIONARIO
-  
-  LER nome
-  LER preço
-  LER quantidade
-  
-  produto["nome"] ← nome
-  produto["preco"] ← preço
-  produto["quantidade"] ← quantidade
-  
-  ESCREVER produto
+  CRIAR produtos COMO DICIONARIO VAZIO
+
+  ESCREVER "Cadastro de produtos (digite 'sair' para encerrar')"
+
+  ENQUANTO VERDADEIRO FAÇA
+      LER nome
+
+      SE nome = "sair" ENTÃO
+          PARAR O LOOP
+      FIMSE
+
+      LER preco
+      LER quantidade
+
+      produtos[nome] ← DICIONARIO {
+          "preco": preco,
+          "quantidade": quantidade
+      }
+  FIMENQUANTO
+
+  ESCREVER "Produtos cadastrados:"
+
+  PARA CADA nome, dados EM produtos FAÇA
+      ESCREVER nome, dados["preco"], dados["quantidade"]
+  FIMPARA
 FIM
+
 ```
 
 ### 🧪 **Exemplo de Entrada**
