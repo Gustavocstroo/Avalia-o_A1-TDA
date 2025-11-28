@@ -1,10 +1,7 @@
-# 🧮 Avaliação A1 – Técnicas de Desenvolvimento de Algoritmos (TDA)
+# Avaliação A1 – Tecnologia e Desenvolvimento de Algoritmos (TDA)
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-
-Repositório com os exercícios da **Avaliação A1** da disciplina **Técnicas de Desenvolvimento de Algoritmos (TDA)**.
-Todos os exercícios contam com código Python comentado e **links diretos para execução no Google Colab**.
+Este repositório reúne todas as atividades desenvolvidas para a Avaliação A1 da disciplina **Tecnologia e Desenvolvimento de Algoritmos**.  
+Aqui estão organizados os códigos, pseudocódigos e notebooks utilizados para resolver cada atividade.
 
 ---
 
@@ -30,100 +27,110 @@ Avaliação_A1_TDA/
 
 ---
 
-## ▶️ Executar no Google Colab
+## 📎 Google Colab – Atividades
 
-### **1. Estruturas Condicionais – Verificação de Idade**
+Cada atividade também foi desenvolvida no Google Colab para facilitar testes e organização:
 
-[![Abrir no Google Colab](https://img.shields.io/badge/Abrir%20no%20Colab-yellow?logo=googlecolab)](https://colab.research.google.com/drive/159wrnFaoe8ywcCt3N5wKIBn5BgjMy9XV?usp=sharing)
+**Atividade 1 – Operações e Estruturas Básicas**  
+🔗 https://colab.research.google.com/drive/159wrnFaoe8ywcCt3N5wKIBn5BgjMy9XV?usp=sharing  
 
-Código: `Estruturas_Condicionais/verificacao_idade.py`
+**Atividade 2 – Estruturas Condicionais**  
+🔗 https://colab.research.google.com/drive/1JItn_Mk4IU1KomvEpulE7j1nShRhKxxf?usp=sharing  
 
----
+**Atividade 3 – Estruturas de Repetição**  
+🔗 https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing  
 
-### **2. Estruturas de Repetição – Números Pares (for/while)**
-
-[![Abrir no Google Colab](https://img.shields.io/badge/Abrir%20no%20Colab-yellow?logo=googlecolab)](https://colab.research.google.com/drive/1JItn_Mk4IU1KomvEpulE7j1nShRhKxxf?usp=sharing)
-
-Código: `Estruturas_de_Repeticao/pares_for_while.py`
-
----
-
-### **3. Listas – Cadastro de Alunos**
-
-[![Abrir no Google Colab](https://img.shields.io/badge/Abrir%20no%20Colab-yellow?logo=googlecolab)](https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing)
-
-Código: `Listas/cadastro_alunos.py`
+**Atividade 4 – Funções**  
+🔗 https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing  
 
 ---
 
-### **4. Dicionários – Cadastro de Produtos**
+## 📝 Pseudocódigos das Atividades
 
-[![Abrir no Google Colab](https://img.shields.io/badge/Abrir%20no%20Colab-yellow?logo=googlecolab)](https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing)
+### **1) Estruturas Condicionais – verificação de idade**
 
-Código: `Dicionarios/cadastro_produtos.py`
+**Arquivo:** `Estruturas_Condicionais/verificacao_idade.py`
 
----
-
-## ▶️ Como Executar Localmente
-
-```bash
-python Estruturas_Condicionais/verificacao_idade.py
-python Estruturas_de_Repeticao/pares_for_while.py
-python Listas/cadastro_alunos.py
-python Dicionarios/cadastro_produtos.py
+**Pseudocódigo:**
+```
+INICIO
+  LER idade
+  SE idade >= 18 ENTÃO
+      ESCREVE "Entrada permitida! Você é maior de idade."
+  SENÃO SE idade >= 16 ENTÃO
+      ESCREVE "Entrada permitida somente com responsável."
+  SENÃO
+      ESCREVE "Entrada proibida. Você é menor de 16 anos."
+  FIMSE
+FIM
 ```
 
 ---
 
-## 🧪 Exemplos de Uso
+### **2) Estruturas de Repetição – números pares**
 
-### **Verificação de Idade**
+**Arquivo:** `Estruturas_de_Repeticao/pares_for_while.py`
 
-Entrada:
-
+**Pseudocódigo:**
 ```
-Digite sua idade: 17
-```
-
-Saída:
-
-```
-Você é menor de idade.
-```
-
----
-
-### **Cadastro de Produtos**
-
-Entrada:
-
-```
-Nome do produto: Coca-Cola
-Preço (R$): 7.5
-Quantidade: 2
-```
-
-Saída:
-
-```
-nome: Coca-Cola
-preco: 7.5
-quantidade: 2
+INICIO
+  PARA numero DE 0 ATÉ 20 PASSO 2 FAÇA
+      ESCREVE numero
+  FIMPARA
+  
+  numero ← 0
+  ENQUANTO numero <= 20 FAÇA
+      ESCREVE numero
+      numero ← numero + 2
+  FIMENQUANTO
+FIM
 ```
 
 ---
 
-## ✅ Critérios de Avaliação Atendidos
+### **3) Listas – cadastro de alunos**
 
-* Código organizado por categoria
-* Scripts comentados
-* Execução local e via Colab
-* README completo e padronizado
-* Exemplos de entrada e saída
-* Licença incluída
+**Arquivo:** `Listas/cadastro_alunos.py`
 
+**Pseudocódigo:**
+```
+INICIO
+  CRIAR lista_alunos VAZIA
+  
+  PARA i DE 1 ATÉ 3 FAÇA
+      LER nome
+      ADICIONAR nome NA lista_alunos
+  FIMPARA
+  
+  ESCREVE lista_alunos
+FIM
+```
+
+---
+
+### **4) Dicionários – cadastro de produtos**
+
+**Arquivo:** `Dicionarios/cadastro_produtos.py`
+
+**Pseudocódigo:**
+```
+INICIO
+  CRIAR produto COMO DICIONARIO
+  
+  LER nome
+  LER preço
+  LER quantidade
+  
+  produto["nome"] ← nome
+  produto["preco"] ← preço
+  produto["quantidade"] ← quantidade
+  
+  ESCREVE produto
+FIM
+```
 ---
 
 ## 📄 Licença
+Este projeto está sob a licença **MIT**.
 
-Este projeto está licenciado sob a **MIT License**.
+---
