@@ -1,2 +1,23 @@
-Lista
-https://colab.research.google.com/drive/1kDKsprc0MhhtiIqmk9N48BvxTVhOsV5a?usp=sharing
+# Programa que cadastra nomes de alunos em uma lista
+# até o usuário digitar "sair".
+
+# Lista vazia que receberá os nomes
+alunos = []
+
+print("Digite os nomes dos alunos (digite 'sair' para encerrar):")
+
+# Loop infinito até o usuário decidir parar
+while True:
+    nome = input("Nome do aluno: ")
+
+    # Condição de parada
+    if nome.lower() == "sair":
+        break
+
+    # Adiciona o nome digitado na lista
+    alunos.append(nome)
+
+# Mostrando todos os nomes cadastrados
+print("\nLista final de alunos cadastrados:")
+for aluno in alunos:
+    print("-", aluno)
