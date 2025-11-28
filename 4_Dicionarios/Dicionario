@@ -1,2 +1,26 @@
-Dicionario
-https://colab.research.google.com/drive/1epRrHTMBV5ai90FpiGzzx4XXcr4PJ2bq?usp=sharing
+# Programa que cadastra produtos utilizando um dicionário.
+# Cada produto terá um nome e um preço.
+
+# Dicionário que armazenará os produtos
+produtos = {}
+
+print("Cadastro de produtos (digite 'sair' para finalizar).")
+
+# Loop para cadastrar vários produtos
+while True:
+    nome = input("Nome do produto: ")
+
+    # Condição de parada
+    if nome.lower() == "sair":
+        break
+
+    # Entrada do preço do produto
+    preco = float(input("Preço do produto: "))
+
+    # Armazena no dicionário (chave = nome, valor = preço)
+    produtos[nome] = preco
+
+# Exibição dos produtos cadastrados
+print("\nProdutos cadastrados:")
+for nome, preco in produtos.items():
+    print(f"{nome}  R$ {preco:.2f}")
