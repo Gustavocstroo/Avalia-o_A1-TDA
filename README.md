@@ -273,16 +273,6 @@ Quantidade: 4
 
 ---
 
-# ✔️ O que este trabalho demonstra
-
-* Domínio de condicionais, repetições, listas e dicionários
-* Capacidade de resolver problemas com lógica
-* Organização do repositório com boa estrutura
-* Pseudocódigo + código funcionando + exemplos
-* Uso de Google Colab para testes e documentação
-
----
-
 # 📄 Licença
 
 Este projeto está sob a licença **MIT**.
