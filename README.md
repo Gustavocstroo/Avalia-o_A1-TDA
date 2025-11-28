@@ -1,39 +1,30 @@
-# Técnicas de Desenvolvimento de Algoritmo (TDA)
+# 🧮 Avaliação A1 – Técnicas de Desenvolvimento de Algoritmos (TDA)
 
-**Bem-vindo(a)** à disciplina de Técnicas de Desenvolvimento de Algoritmos!
-Este repositório reúne materiais, exercícios e códigos referentes à **Avaliação A1**.
+[![Python](https://img.shields.io/badge/python-3.x-blue)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
----
+## 📖 Visão Geral
 
-## 📚 Ementa (resumo)
-
-* Fundamentos da lógica de programação
-* Estruturas de controle (condicionais e repetição)
-* Listas e dicionários
-* Boas práticas e comentários explicativos
+Repositório com os exercícios da **Avaliação A1** da disciplina Técnicas de Desenvolvimento de Algoritmos (TDA).
+Os exercícios cobrem os principais tópicos da unidade: estruturas condicionais, estruturas de repetição, listas e dicionários.
+Cada exercício está organizado em sua própria pasta, com código Python comentado, pseudocódigo e fluxograma (quando aplicável).
 
 ---
 
-## 🎯 Objetivos
+## 🧾 Sumário
 
-* Desenvolver capacidade de pensar algoritmicamente
-* Traduzir soluções em pseudocódigo e código Python
-* Produzir código legível e comentado
-
----
-
-## 🧰 Tecnologias e Ferramentas
-
-* Linguagem: **Python 3.x**
-* IDEs recomendadas: VSCode, Thonny
-* Ferramentas online: Replit, Google Colab
+* [Conteúdos e Estrutura](#conteúdos-e-estrutura)
+* [Como Executar](#como-executar)
+* [Exemplos de Uso](#exemplos-de-uso)
+* [Critérios de Avaliação Atendidos](#critérios-de-avaliação-atendidos)
+* [Licença](#licença)
 
 ---
 
-## 📂 Estrutura do repositório
+## 🗂️ Conteúdos e Estrutura
 
 ```
-Avaliacao-A1-TDA/
+Avaliação_A1_TDA/
 ├── README.md
 ├── LICENSE
 ├── assets/
@@ -60,11 +51,13 @@ Avaliacao-A1-TDA/
     └── fluxograma.png
 ```
 
+> **Dica:** mantenha nomes de pastas sem acentos (`Estruturas_de_Repeticao`, `Dicionarios`) para evitar incompatibilidades entre sistemas operacionais.
+
 ---
 
-## ✅ Como executar (exemplos)
+## ▶️ Como Executar
 
-Abra o terminal e rode:
+Abra o terminal (ou PowerShell) na raiz do repositório e rode:
 
 ```bash
 python Estruturas_Condicionais/verificacao_idade.py
@@ -73,41 +66,46 @@ python Listas/cadastro_alunos.py
 python Dicionarios/cadastro_produtos.py
 ```
 
-### Exemplo de entrada e saída (verificacao_idade.py)
+---
 
+## 🧪 Exemplos de Uso
+
+**Verificação de Idade**
+
+```
 Entrada:
-
-```
 Digite sua idade: 17
-```
 
 Saída:
+Você é menor de idade.
+```
+
+**Cadastro de Produtos**
 
 ```
-Entrada permitida somente com responsável.
+Entrada:
+Nome do produto: Coca-Cola
+Preço (R$): 7.5
+Quantidade: 2
+
+Saída:
+nome: Coca-Cola
+preco: 7.5
+quantidade: 2
 ```
 
 ---
 
-## 🛠 Critérios de avaliação atendidos
+## ✅ Critérios de Avaliação Atendidos
 
-* **Clareza e organização do código** — arquivos separados por tema
-* **Comentários explicativos** — cada script contém comentários didáticos
-* **Entrada e saída funcionando** — instruções e exemplos no README
-* **README completo e bem estruturado** — pseudocódigo e fluxogramas incluídos
-
----
-
-## 📎 Pseudocódigo e fluxogramas
-
-Cada pasta contém um arquivo `pseudocodigo.txt` e um `fluxograma.png` que ilustram a lógica do algoritmo (exigido para nota máxima).
+* Código limpo, organizado por tema
+* Comentários explicativos em cada script
+* Entrada e saída de dados funcionando corretamente
+* README completo, com execução e exemplos
+* Pseudocódigo e fluxograma incluídos (quando presentes)
 
 ---
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a **MIT License** — verifique o arquivo `LICENSE`.
-
----
-
-Se quiser, eu gero os **arquivos de pseudocódigo** e **os fluxogramas** (em PNG) para você e já adiciono no repositório — quer que eu faça isso agora?
+Este projeto está licenciado sob a **MIT License** — veja o arquivo `LICENSE`.
